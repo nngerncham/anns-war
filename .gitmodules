@@ -1,9 +1,0 @@
-[submodule "diskann"]
-	path = diskann
-	url = https://github.com/nngerncham/DiskANN
-[submodule "faiss"]
-	path = faiss
-	url = https://github.com/nngerncham/faiss
-[submodule "hnswlib"]
-	path = hnswlib
-	url = https://github.com/nngerncham/hnswlib
