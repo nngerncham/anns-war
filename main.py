@@ -23,5 +23,5 @@ if __name__ == '__main__':
     diskann_avg = average(diskann_results)
     total_results["diskann"] = diskann_avg
 
-    with open("results.json", "w") as fp:
+    with open("results-gist1m.json", "w") as fp:
         json.dump(total_results, fp)
