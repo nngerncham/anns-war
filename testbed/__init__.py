@@ -1,10 +1,11 @@
-import numpy as np
 from dataclasses import dataclass
+
+import numpy as np
 from dataclasses_serialization.json import JSONSerializer
 
 # BASE_SOURCE = "/home/nawat/muic/senior/anns-war/data/siftsmall/siftsmall"
 # BASE_SOURCE = "/home/nawat/muic/senior/anns-war/data/sift/sift"
-BASE_SOURCE = "/home/nawat/muic/senior/anns-war/data/gist/gist"
+BASE_SOURCE = "/home/nawat/muic/senior/anns-war/data/sift-based/gist/gist"
 DATA_SOURCE = BASE_SOURCE + "_base.fvecs"
 QUERY_SOURCE = BASE_SOURCE + "_query.fvecs"
 GT_SOURCE = BASE_SOURCE + "_groundtruth.ivecs"

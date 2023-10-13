@@ -10,7 +10,7 @@ index_directory = "/home/nawat/muic/senior/anns-war/indices/hnswlib/index.bin"
 def build_hnswlib():
     index = hnswlib.Index("l2", D)
     data = load_base()
-    index.init_index(data.shape[0], M=128, ef_construction=512)
+    index.init_index(data.shape[0], M=128, ef_construction=256)
     index.set_num_threads(NUM_THREADS)
 
     proc = Process(getpid())

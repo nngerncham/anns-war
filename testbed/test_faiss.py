@@ -1,15 +1,17 @@
-import faiss
-from testbed import load_base, load_query, K, D, NUM_THREADS, evaluate, TestResult
-from psutil import Process
 from os import getpid
 from time import time_ns
+
+import faiss
+from psutil import Process
+
+from testbed import load_base, load_query, K, D, NUM_THREADS, evaluate, TestResult
 
 index_directory = "/home/nawat/muic/senior/anns-war/indices/faiss/index.bin"
 
 
 def build_faiss():
     index = faiss.IndexHNSWFlat(D, 128)
-    index.hnsw.efConstruction = 512
+    index.hnsw.efConstruction = 256
     faiss.omp_set_num_threads(NUM_THREADS)
     data = load_base()
 
@@ -33,7 +35,7 @@ def build_faiss():
 
 def search_faiss():
     index = faiss.read_index(index_directory)
-    index.hnsw.efSearch = 128
+    index.hnsw.efSearch = 256
 
     queries, gts = load_query()
     start_time = time_ns()

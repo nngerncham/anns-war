@@ -1,0 +1,23 @@
+{
+  "hnsw": {
+    "build_time_minutes": 5.43120977743,
+    "search_time_minutes": 0.005910614273333334,
+    "mem_diff_gb": 4.1357467648,
+    "mem_final_gb": 8.2148737024,
+    "recall": 0.7553639999999999
+  },
+  "faiss": {
+    "build_time_minutes": 5.859328884603333,
+    "search_time_minutes": 0.006987208846666666,
+    "mem_diff_gb": 4.1004064768,
+    "mem_final_gb": 8.250653081600001,
+    "recall": 0.800486
+  },
+  "diskann": {
+    "build_time_minutes": 10.66729729589333,
+    "search_time_minutes": 0.010315734806666666,
+    "mem_diff_gb": 3.8400270335999998,
+    "mem_final_gb": 8.279110451200001,
+    "recall": 0.912846
+  }
+}

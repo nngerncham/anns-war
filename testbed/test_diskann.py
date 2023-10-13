@@ -1,10 +1,12 @@
+from os import getpid, remove
+from pathlib import Path
+from time import time_ns
+
 import diskannpy
 import numpy as np
 from psutil import Process
-from os import getpid, remove
-from time import time_ns
-from testbed import load_base, load_query, NUM_THREADS, K, D, evaluate, TestResult
-from pathlib import Path
+
+from testbed import load_base, load_query, NUM_THREADS, K, evaluate, TestResult
 
 index_directory = "/home/nawat/muic/senior/anns-war/indices/diskann"
 
@@ -24,8 +26,8 @@ def build_diskann():
     diskannpy.build_memory_index(data,
                                  distance_metric="l2",
                                  index_directory=index_directory,
-                                 complexity=125,
-                                 graph_degree=70,
+                                 complexity=128,
+                                 graph_degree=64,
                                  alpha=2.0,
                                  num_threads=NUM_THREADS)
 
