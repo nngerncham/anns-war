@@ -35,7 +35,7 @@ def build_faiss():
 
 def search_faiss():
     index = faiss.read_index(index_directory)
-    index.hnsw.efSearch = 256
+    index.hnsw.efSearch = 200
 
     queries, gts = load_query()
     start_time = time_ns()
