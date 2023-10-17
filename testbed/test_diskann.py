@@ -26,8 +26,8 @@ def build_diskann():
     diskannpy.build_memory_index(data,
                                  distance_metric="l2",
                                  index_directory=index_directory,
-                                 complexity=128,
-                                 graph_degree=64,
+                                 complexity=256,
+                                 graph_degree=128,
                                  alpha=2.0,
                                  num_threads=NUM_THREADS)
 
@@ -37,7 +37,7 @@ def build_diskann():
     index = diskannpy.StaticMemoryIndex(index_directory,
                                         distance_metric="l2",
                                         num_threads=NUM_THREADS,
-                                        initial_search_complexity=125,
+                                        initial_search_complexity=200,
                                         vector_dtype=np.float32)
     end_mem = proc.memory_info().rss
 

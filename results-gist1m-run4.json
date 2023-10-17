@@ -1,0 +1,1 @@
+{"faiss": {"build_time_minutes": 15.34399494568, "search_time_minutes": 0.015977617023333335, "mem_diff_gb": 4.882837503999999, "mem_final_gb": 8.8525955072, "recall": 0.9332459999999999}, "diskann": {"build_time_minutes": 45.60814908694, "search_time_minutes": 0.024758241826666666, "mem_diff_gb": 3.8398869503999995, "mem_final_gb": 8.5142790144, "recall": 0.97126}}

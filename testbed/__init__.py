@@ -10,7 +10,7 @@ DATA_SOURCE = BASE_SOURCE + "_base.fvecs"
 QUERY_SOURCE = BASE_SOURCE + "_query.fvecs"
 GT_SOURCE = BASE_SOURCE + "_groundtruth.ivecs"
 
-NUM_THREADS = 8
+NUM_THREADS = 6
 K = 100
 D = 960
 
