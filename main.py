@@ -10,9 +10,9 @@ REPS = 5
 if __name__ == '__main__':
     total_results = {}
     #  print("=== testing HNSW ===")
-    #  hnsw_results = [test_hnsw() for _ in range(REPS)]
-    #  hnsw_avg = average(hnsw_results)
-    #  total_results["hnsw"] = hnsw_avg
+    hnsw_results = [test_hnsw() for _ in range(REPS)]
+    hnsw_avg = average(hnsw_results)
+    total_results["hnsw"] = hnsw_avg
 
     #  print("=== testing FAISS ===")
     faiss_results = [test_faiss() for _ in range(REPS)]
@@ -24,5 +24,5 @@ if __name__ == '__main__':
     diskann_avg = average(diskann_results)
     total_results["diskann"] = diskann_avg
 
-    with open("results-gist1m-run4.json", "w") as fp:
+    with open("results-sist1m-run2.json", "w") as fp:
         json.dump(total_results, fp)
