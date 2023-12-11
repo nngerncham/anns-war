@@ -1,1 +1,23 @@
-{"hnsw": {"build_time_minutes": 13.851220113046669, "search_time_minutes": 0.009463291853333333, "mem_diff_gb": 4.9038426112, "mem_final_gb": 8.9995526144, "recall": 0.848512}, "faiss": {"build_time_minutes": 14.825579659223333, "search_time_minutes": 0.0164694966, "mem_diff_gb": 4.868554752, "mem_final_gb": 9.038798848, "recall": 0.932442}, "diskann": {"build_time_minutes": 14.23333909392, "search_time_minutes": 0.011961699793333334, "mem_diff_gb": 3.839840256, "mem_final_gb": 8.2996977664, "recall": 0.9165320000000001}}
+{
+  "hnsw": {
+    "build_time_minutes": 13.851220113046669,
+    "search_time_minutes": 0.009463291853333333,
+    "mem_diff_gb": 4.9038426112,
+    "mem_final_gb": 8.9995526144,
+    "recall": 0.848512
+  },
+  "faiss": {
+    "build_time_minutes": 14.825579659223333,
+    "search_time_minutes": 0.0164694966,
+    "mem_diff_gb": 4.868554752,
+    "mem_final_gb": 9.038798848,
+    "recall": 0.932442
+  },
+  "diskann": {
+    "build_time_minutes": 14.23333909392,
+    "search_time_minutes": 0.011961699793333334,
+    "mem_diff_gb": 3.839840256,
+    "mem_final_gb": 8.2996977664,
+    "recall": 0.9165320000000001
+  }
+}

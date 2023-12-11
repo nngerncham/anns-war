@@ -1,1 +1,23 @@
-{"hnsw": {"build_time_minutes": 14.906498928696667, "search_time_minutes": 0.009223250953333333, "mem_diff_gb": 4.90469376, "mem_final_gb": 8.9746505728, "recall": 0.8486120000000001}, "faiss": {"build_time_minutes": 15.658227723106666, "search_time_minutes": 0.020199641276666663, "mem_diff_gb": 4.8699564032, "mem_final_gb": 9.0229325824, "recall": 0.9509719999999999}, "diskann": {"build_time_minutes": 14.243648413626667, "search_time_minutes": 0.012404384113333333, "mem_diff_gb": 3.8398558207999995, "mem_final_gb": 8.28471296, "recall": 0.9163460000000001}}
+{
+  "hnsw": {
+    "build_time_minutes": 14.906498928696667,
+    "search_time_minutes": 0.009223250953333333,
+    "mem_diff_gb": 4.90469376,
+    "mem_final_gb": 8.9746505728,
+    "recall": 0.8486120000000001
+  },
+  "faiss": {
+    "build_time_minutes": 15.658227723106666,
+    "search_time_minutes": 0.020199641276666663,
+    "mem_diff_gb": 4.8699564032,
+    "mem_final_gb": 9.0229325824,
+    "recall": 0.9509719999999999
+  },
+  "diskann": {
+    "build_time_minutes": 14.243648413626667,
+    "search_time_minutes": 0.012404384113333333,
+    "mem_diff_gb": 3.8398558207999995,
+    "mem_final_gb": 8.28471296,
+    "recall": 0.9163460000000001
+  }
+}
